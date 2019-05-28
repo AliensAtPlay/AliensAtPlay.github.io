@@ -1,11 +1,40 @@
 <html>
 <body style="background-color:#000000;">
 
-  <center>
-    <font color="white">Aliens At Play</font>
-    <br/><br/><br/>
-    <img src="alien.jpg" />
-  </center>
-  
+    <center>
+        <script type="text/javascript">
+
+            // Display a random image from our collection
+            var imgArray = new Array();
+            imgArray[0] = "DanceParty.jpg";
+            imgArray[1] = "MardiGras.jpg";
+            imgArray[2] = "mario.jpg";
+            imgArray[3] = "MashMountain.jpg";
+            imgArray[4] = "Minecraft.jpg";
+            imgArray[5] = "NinjaWarrior.jpg";
+            imgArray[6] = "Oktoberfest.jpg";
+            imgArray[7] = "Pictionary.jpg";
+            imgArray[8] = "Poker.jpg";
+            imgArray[9] = "Rubiks.jpg";
+            imgArray[10] = "SandSphinx.jpg";
+            imgArray[11] = "StarWarsDuel.jpg";
+            imgArray[12] = "Sumo.jpg";
+            imgArray[13] = "surf.jpg";
+            imgArray[14] = "xfiles.jpg";
+            imgArray[15] = "xfiles_trench.jpg";    
+
+            var num = Math.floor(Math.random() * imgArray.length);
+            var img = imgArray[num];
+            var imgStr = '<img src="images/' + img + '" alt="" width=992 height=1043>';
+            document.write(imgStr); document.close();
+
+        </script>
+    </center>
+
 </body>
 </html>
+
+
+
+
+
